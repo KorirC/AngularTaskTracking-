@@ -13,4 +13,4 @@ install:
   - npm install
 
 script:
-  - npm test
+  - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
