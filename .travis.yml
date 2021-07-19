@@ -1,17 +1,14 @@
 --- 
-addons: 
-  chrome: stable
-cache: 
-  directories: 
-    - node_modules
-dist: trusty
-language: node_js
-node_js: 
-  - "11.6.0"
-.script: 
-  - "npm run test"
+Language: node_js
+branch: master
+cache: npm
+deploy: ~
+install: "npm install"
+node_js: "11.6.0"
+provider: npm
+script: 
+  - "npm test"
   - "npm run build"
-  - "xvfb-run npm run e2e"
-sudo: false--- 
-
+skip-cleanup: true
+true: ~
 
