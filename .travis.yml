@@ -7,8 +7,8 @@ install: "npm install"
 node_js: "12.14 "
 provider: npm
 script: 
-  - "npm test"
-  # - "npm build"
+  - "npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI"
+  - "npm build"
 skip-cleanup: true
 true: ~
 
