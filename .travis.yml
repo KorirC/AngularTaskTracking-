@@ -4,7 +4,7 @@ branch: master
 cache: npm
 deploy: ~
 install: "npm install"
-node_js: "11.6.0"
+node_js: "12.14 "
 provider: npm
 script: 
   - "npm test"
