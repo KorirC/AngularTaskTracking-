@@ -1,14 +1,13 @@
---- 
+---
 Language: node_js
 branch: master
 cache: npm
 deploy: ~
 install: "npm install"
-node_js: "12.14 "
+node_js: "12.14.1"
 provider: npm
-script: 
-  - "npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI"
-  - "npm build"
+script:
+  - "npm run test"
+  - "npm run build"
 skip-cleanup: true
 true: ~
-
