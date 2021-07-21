@@ -1,13 +1,13 @@
----
-Language: node_js
-branch: master
-cache: npm
-deploy: ~
-install: "npm install"
-node_js: "12.14.1"
-provider: npm
-script:
+--- 
+addons: 
+  chrome: stable
+cache: 
+  directories: 
+    - ./node_modules
+install: 
+  - "npm install"
+language: node_js
+node_js: 
+  - "12.14.1"
+script: 
   - "npm run test"
-  - "npm run build"
-skip-cleanup: true
-true: ~
