@@ -29,6 +29,9 @@ module.exports = function (config) {
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },
+    angularCli: {
+      environment: 'dev'
+    },
     reporters: ["progress", "kjhtml"],
     port: 9876,
     colors: true,
