@@ -37,7 +37,6 @@ const appRoutes: Routes =[
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-
     RouterModule.forRoot(appRoutes,{enableTracing:true})
   ],
   providers: [],
