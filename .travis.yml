@@ -1,13 +1,19 @@
 --- 
 addons: 
-  chrome: stable
+  apt: 
+    packages: 
+      - google-chrome-stable
+    sources: 
+      - google-chrome
 cache: 
   directories: 
     - ./node_modules
+dist: trusty
 install: 
   - "npm install"
 language: node_js
 node_js: 
-  - "12.14.1"
+  - "12.14.0"
 script: 
-  - "npm run test" 
+  - "npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox"
+sudo: false
